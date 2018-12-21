@@ -3,10 +3,11 @@
     <router-view/>
     <mu-container id="navBar">
       <mu-bottom-nav>
-        <router-link to="/home"><mu-bottom-nav-item title="Home" icon="home"></mu-bottom-nav-item></router-link>
-        <router-link to="/home2"><mu-bottom-nav-item title="Home" icon="home"></mu-bottom-nav-item></router-link>
-        <router-link to="/home3"><mu-bottom-nav-item title="Home" icon="home"></mu-bottom-nav-item></router-link>
-        <router-link to="/about"><mu-bottom-nav-item title="about" icon="home"></mu-bottom-nav-item></router-link>
+        <mu-bottom-nav-item title="首页" icon="home" to="/home"></mu-bottom-nav-item>
+        <mu-bottom-nav-item title="超级搜" icon="search" to="/search"></mu-bottom-nav-item>
+        <mu-bottom-nav-item title="拨号" icon="apps" to="/dial"></mu-bottom-nav-item>
+        <mu-bottom-nav-item title="附近" icon="place" to="/around"></mu-bottom-nav-item>
+        <mu-bottom-nav-item title="我的" icon="person" to="/about"></mu-bottom-nav-item>
       </mu-bottom-nav>
     </mu-container>
   </div>
@@ -31,9 +32,12 @@ export default {
   bottom: 0;
   left: 0;
   right: 0;
-  background: #f5f5f5;
 }
 #navBar .mu-bottom-nav-shift-wrapper{
-  background: #f5f5f5;
+  background: #eee;
+}
+.mu-bottom-item{
+  min-width: inherit;
+  max-width: inherit;
 }
 </style>
